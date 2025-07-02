@@ -45,7 +45,6 @@
         }
         nav a:hover, nav a.active { color: var(--primary-color); border-bottom-color: var(--primary-color); }
         
-        /* PERUBAHAN: Menghapus page-header yang gelap dan menyesuaikan content-section */
         .content-section {
             padding: 60px 40px;
             background: var(--white-color);
@@ -116,91 +115,136 @@
             <div class="container">
                 <h2>Kurikulum Program Studi</h2>
 
-                <!-- PERUBAHAN: Konten Kurikulum diperbarui -->
                 <h3>Profil Lulusan</h3>
                 <p>
                     Lulusan Program Studi Fisika UIN Syarif Hidayatullah Jakarta dipersiapkan untuk menjadi individu yang mampu berperan sebagai Pendidik, Peneliti, Teknisi/Analis Laboratorium, dan Wirausahawan. Mereka dibekali dengan kemampuan analisis dan pemecahan masalah yang kuat, serta keterampilan praktis di bidang instrumentasi dan teknologi terkini.
                 </p>
 
-                <h3>Capaian Pembelajaran Lulusan (CPL)</h3>
-                <p>
-                    Capaian pembelajaran mencakup empat aspek utama: Sikap, Keterampilan Umum, Pengetahuan, dan Keterampilan Khusus, yang dirancang untuk memastikan lulusan memiliki kompetensi yang holistik dan relevan dengan kebutuhan zaman.
-                </p>
-                <ul>
-                    <li><b>Sikap:</b> Bertakwa kepada Tuhan Yang Maha Esa, menjunjung tinggi nilai kemanusiaan, berkontribusi pada kehidupan bermasyarakat, serta menunjukkan sikap bertanggung jawab dan mandiri.</li>
-                    <li><b>Keterampilan Umum:</b> Mampu menerapkan pemikiran logis, kritis, dan inovatif; mampu menunjukkan kinerja mandiri dan terukur; serta mampu mengambil keputusan secara tepat dalam konteks penyelesaian masalah.</li>
-                    <li><b>Pengetahuan:</b> Menguasai konsep teoretis fisika secara mendalam, termasuk mekanika, termodinamika, elektromagnetik, fisika kuantum, dan fisika modern sebagai dasar untuk aplikasi instrumentasi.</li>
-                    <li><b>Keterampilan Khusus:</b> Mampu merancang dan membuat sistem instrumentasi, melakukan analisis data dan pemodelan fisis, serta mampu beradaptasi dengan perkembangan teknologi di bidang fisika dan terapannya.</li>
-                </ul>
-
                 <h3>Struktur Mata Kuliah</h3>
                 <p>
-                    Kurikulum Program Studi Fisika dirancang dengan total 144 SKS yang dapat ditempuh dalam 8 semester. Berikut adalah contoh sebaran mata kuliah untuk semester awal.
+                    Kurikulum Program Studi Fisika dirancang dengan total 144 SKS yang dapat ditempuh dalam 8 semester. Berikut adalah sebaran mata kuliah untuk setiap semester.
                 </p>
+                
+                <!-- Semester 1 -->
+                <h3>Semester 1</h3>
                 <table>
-                    <thead>
-                        <tr>
-                            <th>Kode</th>
-                            <th>Mata Kuliah</th>
-                            <th>SKS</th>
-                        </tr>
-                    </thead>
+                    <thead><tr><th>Kode</th><th>Mata Kuliah</th><th>SKS</th></tr></thead>
                     <tbody>
-                        <tr>
-                            <td>FIA11101</td>
-                            <td>Pendidikan Pancasila</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td>FIA11102</td>
-                            <td>Pendidikan Kewarganegaraan</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td>FIA11103</td>
-                            <td>Ulumul Qur`an dan Ulumul Hadits</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>FIA11104</td>
-                            <td>Bahasa Indonesia</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td>FIA11105</td>
-                            <td>Bahasa Inggris</td>
-                            <td>2</td>
-                        </tr>
-                         <tr>
-                            <td>FIA11106</td>
-                            <td>Bahasa Arab</td>
-                            <td>2</td>
-                        </tr>
-                         <tr>
-                            <td>FMA11201</td>
-                            <td>Fisika Dasar I</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>FMA11202</td>
-                            <td>Praktikum Fisika Dasar I</td>
-                            <td>1</td>
-                        </tr>
-                         <tr>
-                            <td>FMA11203</td>
-                            <td>Kimia Dasar</td>
-                            <td>3</td>
-                        </tr>
-                         <tr>
-                            <td>FMA11204</td>
-                            <td>Praktikum Kimia Dasar</td>
-                            <td>1</td>
-                        </tr>
-                         <tr>
-                            <td>FMA11205</td>
-                            <td>Kalkulus I</td>
-                            <td>3</td>
-                        </tr>
+                        <tr><td>FIA11101</td><td>Pendidikan Pancasila</td><td>2</td></tr>
+                        <tr><td>FIA11102</td><td>Pendidikan Kewarganegaraan</td><td>2</td></tr>
+                        <tr><td>FIA11103</td><td>Ulumul Qur`an dan Ulumul Hadits</td><td>4</td></tr>
+                        <tr><td>FIA11104</td><td>Bahasa Indonesia</td><td>2</td></tr>
+                        <tr><td>FIA11105</td><td>Bahasa Inggris</td><td>2</td></tr>
+                        <tr><td>FIA11106</td><td>Bahasa Arab</td><td>2</td></tr>
+                        <tr><td>FMA11201</td><td>Fisika Dasar I</td><td>3</td></tr>
+                        <tr><td>FMA11202</td><td>Praktikum Fisika Dasar I</td><td>1</td></tr>
+                        <tr><td>FMA11203</td><td>Kimia Dasar</td><td>3</td></tr>
+                        <tr><td>FMA11204</td><td>Praktikum Kimia Dasar</td><td>1</td></tr>
+                        <tr><td>FMA11205</td><td>Kalkulus I</td><td>3</td></tr>
+                    </tbody>
+                </table>
+
+                <!-- Semester 2 -->
+                <h3>Semester 2</h3>
+                <table>
+                    <thead><tr><th>Kode</th><th>Mata Kuliah</th><th>SKS</th></tr></thead>
+                    <tbody>
+                        <tr><td>FIA12101</td><td>Studi Keislaman</td><td>4</td></tr>
+                        <tr><td>FIA12102</td><td>Ilmu Sosial Budaya Dasar</td><td>2</td></tr>
+                        <tr><td>FMA12201</td><td>Fisika Dasar II</td><td>3</td></tr>
+                        <tr><td>FMA12202</td><td>Praktikum Fisika Dasar II</td><td>1</td></tr>
+                        <tr><td>FMA12203</td><td>Kalkulus II</td><td>3</td></tr>
+                        <tr><td>FMA12204</td><td>Dasar Pemrograman</td><td>2</td></tr>
+                        <tr><td>FMA12205</td><td>Praktikum Dasar Pemrograman</td><td>1</td></tr>
+                        <tr><td>FMA12206</td><td>Rangkaian Listrik</td><td>2</td></tr>
+                        <tr><td>FMA12207</td><td>Praktikum Rangkaian Listrik</td><td>1</td></tr>
+                    </tbody>
+                </table>
+                
+                <!-- Semester 3 -->
+                <h3>Semester 3</h3>
+                <table>
+                    <thead><tr><th>Kode</th><th>Mata Kuliah</th><th>SKS</th></tr></thead>
+                    <tbody>
+                        <tr><td>FIA23101</td><td>Filsafat Ilmu</td><td>2</td></tr>
+                        <tr><td>FMA23201</td><td>Fisika Matematika I</td><td>3</td></tr>
+                        <tr><td>FMA23202</td><td>Elektronika Dasar</td><td>3</td></tr>
+                        <tr><td>FMA23203</td><td>Praktikum Elektronika Dasar</td><td>1</td></tr>
+                        <tr><td>FMA23204</td><td>Gelombang dan Optik</td><td>3</td></tr>
+                        <tr><td>FMA23205</td><td>Termodinamika</td><td>3</td></tr>
+                        <tr><td>FMA23206</td><td>Metode Numerik</td><td>2</td></tr>
+                        <tr><td>FMA23207</td><td>Praktikum Metode Numerik</td><td>1</td></tr>
+                    </tbody>
+                </table>
+                
+                <!-- Semester 4 -->
+                <h3>Semester 4</h3>
+                <table>
+                    <thead><tr><th>Kode</th><th>Mata Kuliah</th><th>SKS</th></tr></thead>
+                    <tbody>
+                        <tr><td>FMA24201</td><td>Fisika Matematika II</td><td>3</td></tr>
+                        <tr><td>FMA24202</td><td>Elektronika Lanjut</td><td>3</td></tr>
+                        <tr><td>FMA24203</td><td>Praktikum Elektronika Lanjut</td><td>1</td></tr>
+                        <tr><td>FMA24204</td><td>Listrik Magnet</td><td>3</td></tr>
+                        <tr><td>FMA24205</td><td>Fisika Modern</td><td>3</td></tr>
+                        <tr><td>FMA24206</td><td>Mekanika</td><td>3</td></tr>
+                        <tr><td>FMA24207</td><td>Fisika Statistik</td><td>3</td></tr>
+                        <tr><td>FMA24208</td><td>Kewirausahaan</td><td>2</td></tr>
+                    </tbody>
+                </table>
+
+                <!-- Semester 5 -->
+                <h3>Semester 5</h3>
+                <table>
+                    <thead><tr><th>Kode</th><th>Mata Kuliah</th><th>SKS</th></tr></thead>
+                    <tbody>
+                        <tr><td>FMA35201</td><td>Fisika Kuantum</td><td>3</td></tr>
+                        <tr><td>FMA35202</td><td>Fisika Komputasi</td><td>2</td></tr>
+                        <tr><td>FMA35203</td><td>Praktikum Fisika Komputasi</td><td>1</td></tr>
+                        <tr><td>FMA35204</td><td>Instrumentasi dan Pengukuran</td><td>3</td></tr>
+                        <tr><td>FMA35205</td><td>Praktikum Instrumentasi & Pengukuran</td><td>1</td></tr>
+                        <tr><td>FMA35206</td><td>Fisika Zat Padat</td><td>3</td></tr>
+                        <tr><td>FMA35207</td><td>Metodologi Penelitian</td><td>2</td></tr>
+                        <tr><td>FMA353XX</td><td>Mata Kuliah Pilihan</td><td>2</td></tr>
+                    </tbody>
+                </table>
+
+                <!-- Semester 6 -->
+                <h3>Semester 6</h3>
+                <table>
+                    <thead><tr><th>Kode</th><th>Mata Kuliah</th><th>SKS</th></tr></thead>
+                    <tbody>
+                        <tr><td>FIA36101</td><td>Kuliah Kerja Nyata (KKN)</td><td>4</td></tr>
+                        <tr><td>FMA36201</td><td>Fisika Inti</td><td>3</td></tr>
+                        <tr><td>FMA36202</td><td>Instrumentasi Nuklir</td><td>2</td></tr>
+                        <tr><td>FMA36203</td><td>Instrumentasi Industri</td><td>2</td></tr>
+                        <tr><td>FMA36204</td><td>Instrumentasi Medis</td><td>2</td></tr>
+                        <tr><td>FMA36205</td><td>Sistem Sensor</td><td>2</td></tr>
+                        <tr><td>FMA363XX</td><td>Mata Kuliah Pilihan</td><td>2</td></tr>
+                    </tbody>
+                </table>
+
+                <!-- Semester 7 -->
+                <h3>Semester 7</h3>
+                <table>
+                    <thead><tr><th>Kode</th><th>Mata Kuliah</th><th>SKS</th></tr></thead>
+                    <tbody>
+                        <tr><td>FMA47201</td><td>Tugas Akhir I (Proposal)</td><td>2</td></tr>
+                        <tr><td>FMA47202</td><td>Kerja Praktik</td><td>2</td></tr>
+                        <tr><td>FMA47203</td><td>Pengolahan Sinyal Digital</td><td>2</td></tr>
+                        <tr><td>FMA47204</td><td>Praktikum Pengolahan Sinyal Digital</td><td>1</td></tr>
+                        <tr><td>FMA473XX</td><td>Mata Kuliah Pilihan</td><td>2</td></tr>
+                        <tr><td>FMA473XX</td><td>Mata Kuliah Pilihan</td><td>2</td></tr>
+                    </tbody>
+                </table>
+
+                <!-- Semester 8 -->
+                <h3>Semester 8</h3>
+                <table>
+                    <thead><tr><th>Kode</th><th>Mata Kuliah</th><th>SKS</th></tr></thead>
+                    <tbody>
+                        <tr><td>FMA48201</td><td>Tugas Akhir II (Skripsi)</td><td>4</td></tr>
+                        <tr><td>FMA48202</td><td>Ujian Komprehensif</td><td>2</td></tr>
                     </tbody>
                 </table>
             </div>
