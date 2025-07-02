@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil | Fisika Instrumentasi</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
         :root {
-            --primary-color: #007bff; --primary-hover: #0056b3; --secondary-color: #e9ecef;
-            --dark-color: #343a40; --light-color: #f8f9fa; --text-color: #333;
-            --white-color: #ffffff; --font-heading: 'Lora', serif; --font-body: 'Poppins', sans-serif;
+            --primary-color: #007bff;
+            --primary-hover: #0056b3;
+            --secondary-color: #e9ecef;
+            --dark-color: #343a40;
+            --light-color: #f8f9fa;
+            --text-color: #333;
+            --white-color: #ffffff;
+            --font-heading: 'Lora', serif;
+            --font-body: 'Poppins', sans-serif;
         }
         body {
             font-family: var(--font-body); margin: 0; padding: 0;
@@ -36,29 +44,39 @@
             transition: color 0.3s, border-color 0.3s;
         }
         nav a:hover, nav a.active { color: var(--primary-color); border-bottom-color: var(--primary-color); }
-        .page-header {
-            padding: 60px 20px;
-            background-color: var(--dark-color);
-            color: var(--white-color);
-            text-align: center;
-        }
-        .page-header h2 {
-            font-family: var(--font-heading);
-            font-size: 42px;
-            margin: 0;
-        }
+        
+        /* PERUBAHAN: Menghapus page-header yang gelap */
         .content-section {
-            padding: 80px 20px;
+            padding: 60px 40px; /* Menambah padding */
             background: var(--white-color);
-            max-width: 900px;
-            margin: 40px auto;
+            max-width: 950px; /* Memperlebar konten */
+            margin: 50px auto; /* Memberi jarak atas/bawah */
             border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .content-section h2 {
+             font-family: var(--font-heading);
+            font-size: 42px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            text-align: center;
+            color: var(--dark-color);
         }
         .content-section h3 {
             font-family: var(--font-heading);
             font-size: 28px;
+            margin-top: 40px;
             margin-bottom: 20px;
             color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+        }
+        .content-section p, .content-section li {
+            font-size: 16px;
+            color: #555;
+        }
+        .content-section ul, .content-section ol {
+            padding-left: 20px;
         }
         footer {
             background: var(--dark-color); color: var(--white-color);
@@ -87,22 +105,44 @@
             </nav>
         </div>
     </header>
+
     <main>
-        <section class="page-header">
-            <h2>Profil Program Studi</h2>
-        </section>
         <section class="content-section">
             <div class="container">
-                <h3>Visi & Misi</h3>
-                <p>Menjadi program studi yang unggul dan kompetitif dalam bidang fisika instrumentasi, yang mengintegrasikan ilmu pengetahuan, teknologi, dan nilai-nilai keislaman untuk kemanusiaan dan peradaban pada tahun 2030.</p>
-                <br>
-                <h3>Sejarah Singkat</h3>
-                <p>Program Studi Fisika Instrumentasi didirikan pada tahun XXXX sebagai jawaban atas kebutuhan industri dan penelitian akan ahli-ahli yang mampu merancang, mengembangkan, dan mengaplikasikan sistem instrumentasi berbasis fisika. Sejak awal berdirinya, prodi ini telah berkomitmen untuk menghasilkan lulusan yang kompeten dan inovatif.</p>
+                <h2>Profil Program Studi</h2>
+
+                <!-- PERUBAHAN: Konten Visi, Misi, Tujuan, dan Sejarah diperbarui -->
+                <h3>Visi Program Studi</h3>
+                <p>Mewujudkan Program Studi Fisika yang mandiri dan unggul berlandaskan keilmuan yang kuat dengan mengintegrasikan nilai-nilai keilmuan, ke-Islaman dan ke- Indonesiaan.</p>
+
+                <h3>Misi Program Studi</h3>
+                <ol>
+                    <li>Memberikan landasan moral dalam pengembangan Fisika dengan keseimbangan ilmu dan iman.</li>
+                    <li>Menyelenggarakan pendidikan dengan landasan keilmuan Fisika yang kuat.</li>
+                    <li>Menyelenggarakan penelitian dan pengembangan dalam bidang Fisika.</li>
+                    <li>Berkontribusi pada aplikasi Fisika untuk meningkatkan kualitas hidup masyarakat.</li>
+                </ol>
+
+                <h3>Tujuan Program Studi</h3>
+                <ol>
+                    <li>Menyelenggarakan pendidikan yang efektif dalam menghasilkan sarjana Fisika yang memiliki keunggulan kompetitif.</li>
+                    <li>Menghasilkan penelitian dan karya ilmiah yang bermutu dan memiliki kontribusi positif dalam perkembangan ilmu dan teknologi.</li>
+                    <li>Berperan aktif dalam melakukan kegiatan pengabdian pada masyarakat berlandaskan ilmu Fisika dan terapannya.</li>
+                    <li>Meningkatkan kerjasama yang efektif, strategis, produktif dan sinergis.</li>
+                </ol>
+                
+                <h3>Sejarah</h3>
+                <p>Pendirian UIN Syarif Hidayatullah Jakarta berawal dari dibentuknya Akademi Dinas Ilmu Agama (ADIA) sebagai akademi dinas Departemen Agama pada tanggal 1 Juni 1957, berdasarkan Ketetapan Menteri Agama, Nomor 1 Tahun 1957. Dalam perkembangan selanjutnya, Tahun 1960 berdasarkan PP No II Tahun 1960 tanggal 24 Agustus 1960 ADIA bergabung dengan PTAIN (Perguruan Tinggi Agama Islam) yang berada di Yogyakarta menjadi IAIN Al-Jamiah Al-Hukumiyah yang diresmikan oleh Menteri Agama dalam suatu upacara di Gedung kepatihan Yogyakarta.</p>
+                <p>Sejak tahun ajaran 2000/2001, IAIN Syarif Hidayatullah Jakarta membentuk Program Konversi UIN yang menyelenggarakan Program Studi (Prodi) Teknik Informatika, Prodi Agribisnis dan Ekonomi. Pada tahun 2002, berdasarkan Keputusan Presiden RI No. 31 Tahun 2002 tentang perubahan IAIN Syarif Hidayatullah Jakarta menjadi UIN Syarif Hidayatullah Jakarta dan Program Studi tersebut berubah menjadi Fakultas Sains dan Teknologi (FST) dan Fakultas Ekonomi dan Ilmu Sosial (FEIS).</p>
+                <p>Program Studi Fisika merupakan salah satu di antara delapan program studi yang dikelola oleh Fakultas Sains dan Teknologi (FST), UIN Syarif Hidayatullah, Jakarta. PS Fisika berdiri sejak tahun 2002 yang diakui secara formal dengan Surat Keputusan Menteri Pendidikan Nasional Nomor 088796/MPN/O/2001, tanggal 22 November 2001 dan Surat Keputusan Direktorat Jenderal Kelembagaan Islam (Bagais) Departemen Agama No.DJ.II/216/2002, tanggal 11 Juli 2002. Penyelenggaraan kegiatan akademik dimulai pada bulan September 2002. Dalam perkembangannya berdasarkan hasil evaluasi akademik, Program Studi Fisika memperoleh perpanjangan ijin operasional berdasarkan rekomendasi Direktorat Jenderal Pendidikan Tinggi Depdiknas Nomor: 4706/D/T/2006, tanggal 11 Desember 2006 dan  perpanjangan ijin operasional dari Direktorat Jenderal Pendidikan Islam Departemen Agama dengan Surat Keputusan No.DJ. I/214/2007 tanggal 21 Mei 2007.</p>
+                <p>Program Studi Fisika telah terakreditasi dengan peringkat akreditasi B berdasarkan Surat Keputusan Badan Akreditasi Nasional Perguruan Tinggi Departemen Pendidikan Nasional Republik Indonesia Nomor: 5621/SK/BAN-PT/Ak/S/VIII/2022 yang berlaku pada 23 Agustus 2022 s.d. 23 Agustus 2027.</p>
             </div>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2025 Prodi Fisika Instrumentasi. All Rights Reserved.</p>
     </footer>
+
 </body>
 </html>
