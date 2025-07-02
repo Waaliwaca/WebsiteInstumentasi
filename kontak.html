@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontak | Fisika Instrumentasi</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <style>
         :root {
-            --primary-color: #007bff; --primary-hover: #0056b3; --secondary-color: #e9ecef;
-            --dark-color: #343a40; --light-color: #f8f9fa; --text-color: #333;
-            --white-color: #ffffff; --font-heading: 'Lora', serif; --font-body: 'Poppins', sans-serif;
+            --primary-color: #007bff;
+            --primary-hover: #0056b3;
+            --secondary-color: #e9ecef;
+            --dark-color: #343a40;
+            --light-color: #f8f9fa;
+            --text-color: #333;
+            --white-color: #ffffff;
+            --font-heading: 'Lora', serif;
+            --font-body: 'Poppins', sans-serif;
         }
         body {
             font-family: var(--font-body); margin: 0; padding: 0;
@@ -36,16 +46,63 @@
             transition: color 0.3s, border-color 0.3s;
         }
         nav a:hover, nav a.active { color: var(--primary-color); border-bottom-color: var(--primary-color); }
-        .page-header {
-            padding: 60px 20px; background-color: var(--dark-color);
-            color: var(--white-color); text-align: center;
+        
+        /* PERUBAHAN: Menghapus page-header dan menyesuaikan content-section */
+        .content-section {
+            padding: 60px 40px;
+            background: var(--white-color);
+            max-width: 950px;
+            margin: 50px auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
-        .page-header h2 { font-family: var(--font-heading); font-size: 42px; margin: 0; }
-        .content-section { padding: 80px 20px; background: var(--white-color); max-width: 900px; margin: 40px auto; border-radius: 8px; }
-        .contact-info p { font-size: 1.1em; line-height: 1.8; }
+        .content-section h2 {
+             font-family: var(--font-heading);
+            font-size: 42px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            text-align: center;
+            color: var(--dark-color);
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        .contact-info p {
+            font-size: 16px;
+            color: #555;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .contact-info i {
+            font-size: 20px;
+            color: var(--primary-color);
+            margin-right: 15px;
+            width: 25px;
+            text-align: center;
+        }
+        .map-container {
+            width: 100%;
+            height: 350px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
         footer {
             background: var(--dark-color); color: var(--white-color);
             text-align: center; padding: 25px 0;
+        }
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -68,19 +125,37 @@
         </div>
     </header>
     <main>
-        <section class="page-header"><h2>Hubungi Kami</h2></section>
         <section class="content-section">
-            <div class="container contact-info">
-                <p><strong>Alamat:</strong><br>
-                Gedung Program Studi Fisika Instrumentasi<br>
-                Fakultas Sains dan Teknologi, UIN Syarif Hidayatullah Jakarta<br>
-                Jl. Ir. H. Juanda No.95, Cempaka Putih, Kec. Ciputat Tim., Kota Tangerang Selatan, Banten 15412</p>
-                
-                <p><strong>Email:</strong><br>
-                fisika.instrumentasi@uinjkt.ac.id</p>
-                
-                <p><strong>Telepon:</strong><br>
-                (021) 123-4567</p>
+            <div class="container">
+                <h2>Hubungi Kami</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>
+                                <strong>Alamat:</strong><br>
+                                Gedung Fakultas Sains dan Teknologi, Jl. Ir. H. Juanda No. 95, Ciputat, Tangerang Selatan, Banten, Indonesia
+                            </span>
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope"></i>
+                            <span>
+                                <strong>Email:</strong><br>
+                                fisika@uinjkt.ac.id
+                            </span>
+                        </p>
+                        <p>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>
+                                <strong>Telepon:</strong><br>
+                                (021) 7493834
+                            </span>
+                        </p>
+                    </div>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.485392949774!2d106.74636181534386!3d-6.33061579541994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69efdf1e2a7c63%3A0x10086c355b9b274c!2sFakultas%20Sains%20dan%20Teknologi%20UIN%20Syarif%20Hidayatullah%20Jakarta!5e0!3m2!1sen!2sid!4v1672824747835!5m2!1sen!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
