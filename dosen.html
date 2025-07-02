@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Salin semua CSS dari file index.html ke sini */
         :root {
             --primary-color: #007bff; --primary-hover: #0056b3; --secondary-color: #e9ecef;
             --dark-color: #343a40; --light-color: #f8f9fa; --text-color: #333;
@@ -42,11 +41,12 @@
             color: var(--white-color); text-align: center;
         }
         .page-header h2 { font-family: var(--font-heading); font-size: 42px; margin: 0; }
-        .content-section { padding: 80px 0; background: var(--white-color); }
+        .content-section { padding: 80px 20px; background: var(--white-color); max-width: 1200px; margin: 40px auto; border-radius: 8px; }
         .dosen-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 30px; }
-        .dosen-card { text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px; border-radius: 10px; }
+        .dosen-card { text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px; border-radius: 10px; transition: transform 0.3s; }
+        .dosen-card:hover { transform: translateY(-5px); }
         .dosen-card img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 15px; }
-        .dosen-card h4 { margin: 10px 0 5px 0; }
+        .dosen-card h4 { margin: 10px 0 5px 0; font-family: var(--font-heading); }
         .dosen-card p { color: #777; font-size: 14px; margin: 0; }
         footer {
             background: var(--dark-color); color: var(--white-color);
@@ -78,16 +78,25 @@
             <div class="container">
                 <div class="dosen-grid">
                     <div class="dosen-card">
-                        <img src="https://via.placeholder.com/150" alt="Foto Dosen">
+                        <img src="https://via.placeholder.com/150/007BFF/FFFFFF?text=DSN" alt="Foto Dosen">
                         <h4>Dr. Nama Dosen, S.Si., M.Si.</h4>
                         <p>Bidang Keahlian: Elektronika</p>
                     </div>
                     <div class="dosen-card">
-                        <img src="https://via.placeholder.com/150" alt="Foto Dosen">
+                        <img src="https://via.placeholder.com/150/343A40/FFFFFF?text=DSN" alt="Foto Dosen">
                         <h4>Prof. Nama Dosen, Ph.D.</h4>
                         <p>Bidang Keahlian: Sensor</p>
                     </div>
-                    <!-- Tambahkan dosen lain -->
+                    <div class="dosen-card">
+                        <img src="https://via.placeholder.com/150/28A745/FFFFFF?text=DSN" alt="Foto Dosen">
+                        <h4>Nama Dosen, S.T., M.T.</h4>
+                        <p>Bidang Keahlian: Robotika</p>
+                    </div>
+                     <div class="dosen-card">
+                        <img src="https://via.placeholder.com/150/FFC107/FFFFFF?text=DSN" alt="Foto Dosen">
+                        <h4>Nama Dosen, S.Fis., M.Sc.</h4>
+                        <p>Bidang Keahlian: Biofisika</p>
+                    </div>
                 </div>
             </div>
         </section>
