@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kurikulum | Fisika Instrumentasi</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
         :root {
-            --primary-color: #007bff; --primary-hover: #0056b3; --secondary-color: #e9ecef;
-            --dark-color: #343a40; --light-color: #f8f9fa; --text-color: #333;
-            --white-color: #ffffff; --font-heading: 'Lora', serif; --font-body: 'Poppins', sans-serif;
+            --primary-color: #007bff;
+            --primary-hover: #0056b3;
+            --secondary-color: #e9ecef;
+            --dark-color: #343a40;
+            --light-color: #f8f9fa;
+            --text-color: #333;
+            --white-color: #ffffff;
+            --font-heading: 'Lora', serif;
+            --font-body: 'Poppins', sans-serif;
         }
         body {
             font-family: var(--font-body); margin: 0; padding: 0;
@@ -36,16 +44,45 @@
             transition: color 0.3s, border-color 0.3s;
         }
         nav a:hover, nav a.active { color: var(--primary-color); border-bottom-color: var(--primary-color); }
-        .page-header {
-            padding: 60px 20px; background-color: var(--dark-color);
-            color: var(--white-color); text-align: center;
+        
+        /* PERUBAHAN: Menghapus page-header yang gelap dan menyesuaikan content-section */
+        .content-section {
+            padding: 60px 40px;
+            background: var(--white-color);
+            max-width: 950px;
+            margin: 50px auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
-        .page-header h2 { font-family: var(--font-heading); font-size: 42px; margin: 0; }
-        .content-section { padding: 80px 20px; background: var(--white-color); max-width: 900px; margin: 40px auto; border-radius: 8px; }
-        .content-section h3 { font-family: var(--font-heading); font-size: 28px; margin-bottom: 20px; color: var(--primary-color); }
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .content-section h2 {
+             font-family: var(--font-heading);
+            font-size: 42px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            text-align: center;
+            color: var(--dark-color);
+        }
+        .content-section h3 {
+            font-family: var(--font-heading);
+            font-size: 28px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+        }
+        .content-section p, .content-section li {
+            font-size: 16px;
+            color: #555;
+            text-align: justify;
+        }
+        .content-section ul, .content-section ol {
+            padding-left: 20px;
+        }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 15px; }
         th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
         th { background-color: var(--secondary-color); font-weight: 600; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
         footer {
             background: var(--dark-color); color: var(--white-color);
             text-align: center; padding: 25px 0;
@@ -56,7 +93,10 @@
     <header>
         <div class="container">
             <div class="logo">
-                <a href="index.html"><img src="images/logo.png" alt="Logo Fisika Instrumentasi"><h1>Instrumentation Physics</h1></a>
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Logo Fisika Instrumentasi">
+                    <h1>Instrumentation Physics</h1>
+                </a>
             </div>
             <nav>
                 <ul>
@@ -70,29 +110,106 @@
             </nav>
         </div>
     </header>
+
     <main>
-        <section class="page-header"><h2>Struktur Kurikulum</h2></section>
         <section class="content-section">
             <div class="container">
-                <h3>Daftar Mata Kuliah</h3>
-                <p>Berikut adalah contoh daftar mata kuliah wajib dan pilihan yang ditawarkan di Program Studi Fisika Instrumentasi.</p>
-                <h3>Semester 1</h3>
+                <h2>Kurikulum Program Studi</h2>
+
+                <!-- PERUBAHAN: Konten Kurikulum diperbarui -->
+                <h3>Profil Lulusan</h3>
+                <p>
+                    Lulusan Program Studi Fisika UIN Syarif Hidayatullah Jakarta dipersiapkan untuk menjadi individu yang mampu berperan sebagai Pendidik, Peneliti, Teknisi/Analis Laboratorium, dan Wirausahawan. Mereka dibekali dengan kemampuan analisis dan pemecahan masalah yang kuat, serta keterampilan praktis di bidang instrumentasi dan teknologi terkini.
+                </p>
+
+                <h3>Capaian Pembelajaran Lulusan (CPL)</h3>
+                <p>
+                    Capaian pembelajaran mencakup empat aspek utama: Sikap, Keterampilan Umum, Pengetahuan, dan Keterampilan Khusus, yang dirancang untuk memastikan lulusan memiliki kompetensi yang holistik dan relevan dengan kebutuhan zaman.
+                </p>
+                <ul>
+                    <li><b>Sikap:</b> Bertakwa kepada Tuhan Yang Maha Esa, menjunjung tinggi nilai kemanusiaan, berkontribusi pada kehidupan bermasyarakat, serta menunjukkan sikap bertanggung jawab dan mandiri.</li>
+                    <li><b>Keterampilan Umum:</b> Mampu menerapkan pemikiran logis, kritis, dan inovatif; mampu menunjukkan kinerja mandiri dan terukur; serta mampu mengambil keputusan secara tepat dalam konteks penyelesaian masalah.</li>
+                    <li><b>Pengetahuan:</b> Menguasai konsep teoretis fisika secara mendalam, termasuk mekanika, termodinamika, elektromagnetik, fisika kuantum, dan fisika modern sebagai dasar untuk aplikasi instrumentasi.</li>
+                    <li><b>Keterampilan Khusus:</b> Mampu merancang dan membuat sistem instrumentasi, melakukan analisis data dan pemodelan fisis, serta mampu beradaptasi dengan perkembangan teknologi di bidang fisika dan terapannya.</li>
+                </ul>
+
+                <h3>Struktur Mata Kuliah</h3>
+                <p>
+                    Kurikulum Program Studi Fisika dirancang dengan total 144 SKS yang dapat ditempuh dalam 8 semester. Berikut adalah contoh sebaran mata kuliah untuk semester awal.
+                </p>
                 <table>
-                    <tr><th>Kode MK</th><th>Nama Mata Kuliah</th><th>SKS</th></tr>
-                    <tr><td>FI101</td><td>Fisika Dasar I</td><td>4</td></tr>
-                    <tr><td>FI102</td><td>Kalkulus I</td><td>4</td></tr>
-                    <tr><td>FI103</td><td>Kimia Dasar</td><td>3</td></tr>
-                </table>
-                <h3>Semester 2</h3>
-                <table>
-                     <tr><th>Kode MK</th><th>Nama Mata Kuliah</th><th>SKS</th></tr>
-                    <tr><td>FI201</td><td>Fisika Dasar II</td><td>4</td></tr>
-                    <tr><td>FI202</td><td>Kalkulus II</td><td>4</td></tr>
-                    <tr><td>FI203</td><td>Dasar Pemrograman</td><td>3</td></tr>
+                    <thead>
+                        <tr>
+                            <th>Kode</th>
+                            <th>Mata Kuliah</th>
+                            <th>SKS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>FIA11101</td>
+                            <td>Pendidikan Pancasila</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>FIA11102</td>
+                            <td>Pendidikan Kewarganegaraan</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>FIA11103</td>
+                            <td>Ulumul Qur`an dan Ulumul Hadits</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>FIA11104</td>
+                            <td>Bahasa Indonesia</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>FIA11105</td>
+                            <td>Bahasa Inggris</td>
+                            <td>2</td>
+                        </tr>
+                         <tr>
+                            <td>FIA11106</td>
+                            <td>Bahasa Arab</td>
+                            <td>2</td>
+                        </tr>
+                         <tr>
+                            <td>FMA11201</td>
+                            <td>Fisika Dasar I</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>FMA11202</td>
+                            <td>Praktikum Fisika Dasar I</td>
+                            <td>1</td>
+                        </tr>
+                         <tr>
+                            <td>FMA11203</td>
+                            <td>Kimia Dasar</td>
+                            <td>3</td>
+                        </tr>
+                         <tr>
+                            <td>FMA11204</td>
+                            <td>Praktikum Kimia Dasar</td>
+                            <td>1</td>
+                        </tr>
+                         <tr>
+                            <td>FMA11205</td>
+                            <td>Kalkulus I</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </section>
     </main>
-    <footer><p>&copy; 2025 Prodi Fisika Instrumentasi. All Rights Reserved.</p></footer>
+
+    <footer>
+        <p>&copy; 2025 Prodi Fisika Instrumentasi. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
