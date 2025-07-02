@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Salin semua CSS dari file index.html ke sini */
         :root {
             --primary-color: #007bff; --primary-hover: #0056b3; --secondary-color: #e9ecef;
             --dark-color: #343a40; --light-color: #f8f9fa; --text-color: #333;
@@ -42,8 +41,9 @@
             color: var(--white-color); text-align: center;
         }
         .page-header h2 { font-family: var(--font-heading); font-size: 42px; margin: 0; }
-        .content-section { padding: 80px 0; background: var(--white-color); }
-        .content-section h3 { font-family: var(--font-heading); font-size: 28px; margin-bottom: 20px; }
+        .content-section { padding: 80px 20px; background: var(--white-color); max-width: 900px; margin: 40px auto; border-radius: 8px; }
+        .content-section h3 { font-family: var(--font-heading); font-size: 28px; margin-bottom: 20px; color: var(--primary-color); }
+        .riset-item { margin-bottom: 30px; }
         footer {
             background: var(--dark-color); color: var(--white-color);
             text-align: center; padding: 25px 0;
@@ -72,10 +72,24 @@
         <section class="page-header"><h2>Riset & Publikasi</h2></section>
         <section class="content-section">
             <div class="container">
-                <h3>Kelompok Bidang Keahlian (KBK)</h3>
-                <p>Jelaskan kelompok-kelompok riset yang ada di prodi, misalnya KBK Sensor dan Sistem Cerdas, KBK Biofisika, dll.</p>
-                <h3>Publikasi Terbaru</h3>
-                <p>Tampilkan daftar publikasi ilmiah terbaru dari dosen dan mahasiswa di sini.</p>
+                <div class="riset-item">
+                    <h3>Kelompok Bidang Keahlian (KBK)</h3>
+                    <p>Program studi kami memiliki beberapa fokus riset unggulan yang dikelola dalam Kelompok Bidang Keahlian untuk mendorong inovasi dan kolaborasi.</p>
+                    <ul>
+                        <li>KBK Sensor dan Sistem Cerdas</li>
+                        <li>KBK Biofisika dan Instrumentasi Medis</li>
+                        <li>KBK Robotika dan Otomasi</li>
+                        <li>KBK Material Cerdas</li>
+                    </ul>
+                </div>
+                <div class="riset-item">
+                    <h3>Publikasi Terbaru</h3>
+                    <p>Berikut adalah beberapa contoh publikasi terbaru dari staf pengajar kami di jurnal internasional dan nasional bereputasi.</p>
+                    <ul>
+                        <li>Judul Publikasi 1, Nama Jurnal, Vol. X, No. Y, Tahun.</li>
+                        <li>Judul Publikasi 2, Nama Jurnal, Vol. X, No. Y, Tahun.</li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
