@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Salin semua CSS dari file index.html ke sini */
         :root {
             --primary-color: #007bff; --primary-hover: #0056b3; --secondary-color: #e9ecef;
             --dark-color: #343a40; --light-color: #f8f9fa; --text-color: #333;
@@ -42,8 +41,8 @@
             color: var(--white-color); text-align: center;
         }
         .page-header h2 { font-family: var(--font-heading); font-size: 42px; margin: 0; }
-        .content-section { padding: 80px 0; background: var(--white-color); }
-        .content-section h3 { font-family: var(--font-heading); font-size: 28px; margin-bottom: 20px; }
+        .content-section { padding: 80px 20px; background: var(--white-color); max-width: 900px; margin: 40px auto; border-radius: 8px; }
+        .content-section h3 { font-family: var(--font-heading); font-size: 28px; margin-bottom: 20px; color: var(--primary-color); }
         table { width: 100%; border-collapse: collapse; margin-top: 20px; }
         th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
         th { background-color: var(--secondary-color); font-weight: 600; }
@@ -76,20 +75,20 @@
         <section class="content-section">
             <div class="container">
                 <h3>Daftar Mata Kuliah</h3>
-                <p>Berikut adalah daftar mata kuliah wajib dan pilihan yang ditawarkan di Program Studi Fisika Instrumentasi.</p>
-                <h4>Semester 1</h4>
+                <p>Berikut adalah contoh daftar mata kuliah wajib dan pilihan yang ditawarkan di Program Studi Fisika Instrumentasi.</p>
+                <h3>Semester 1</h3>
                 <table>
                     <tr><th>Kode MK</th><th>Nama Mata Kuliah</th><th>SKS</th></tr>
                     <tr><td>FI101</td><td>Fisika Dasar I</td><td>4</td></tr>
                     <tr><td>FI102</td><td>Kalkulus I</td><td>4</td></tr>
-                    <!-- Tambahkan mata kuliah lain -->
+                    <tr><td>FI103</td><td>Kimia Dasar</td><td>3</td></tr>
                 </table>
-                <h4>Semester 2</h4>
+                <h3>Semester 2</h3>
                 <table>
                      <tr><th>Kode MK</th><th>Nama Mata Kuliah</th><th>SKS</th></tr>
                     <tr><td>FI201</td><td>Fisika Dasar II</td><td>4</td></tr>
                     <tr><td>FI202</td><td>Kalkulus II</td><td>4</td></tr>
-                    <!-- Tambahkan mata kuliah lain -->
+                    <tr><td>FI203</td><td>Dasar Pemrograman</td><td>3</td></tr>
                 </table>
             </div>
         </section>
